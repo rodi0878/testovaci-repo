@@ -41,7 +41,7 @@ public class ModelTest {
         
         String actual = instance.hello("test");
         
-        assertEquals("Hello test", actual);
+        assertEquals("Hello test!", actual);
     }
     
 }
