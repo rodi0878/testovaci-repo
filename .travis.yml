@@ -2,3 +2,8 @@ language: java
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  
+deploy:
+  provider: heroku
+  api_key:
+    secure: "nvj7yM20zHWr9vFrz1wj/c46YbfUrTlVmSoPb7oSjZ+iSLkwJ4zeCfRSViKgtnU7o3Lu5zY+2M7AO7Jg18/LaLMpNP4g7iQepThXNu859SdyUfEYIsvGgM56esqmi2xZZErjWKsbJoY9FKHh/x4i7MAq11Q1VqLRda/YMcf/eZR0mAcnZMKf/drJt1H4emq1IYYoYMxz27iICqok//E4sjnSSQxD4vMBTv+ivOdJuYiYJPKI997Kij8TjMIIaoobDACNMkcZ3N2vPPoJ4GilwCqiy60eT+bDteZ3ElV/KWQ5lwzJrph36kEA4VyKKB2oXuD/SqrpRAmpGmurzxknC3I+gOwz+hyf5DslDaFvbBpdwKGRr2qreABpdttRPa5QwVIYSBSzEvbkZutf5BYADm3DKHmU6lX2PcpvWsiDZOTsBJw+zYIEg5HpDz6k1kHX1gbJoZi+DkQfROtO3biE8WSNjP/KsVmS903v9D4K+bnPboKlnpBh8q6QKDUO+pUrtLX29dLsfxqVYY8o1WRsHcjgbpyzgCJqr7cJLOGXscqaHmHI12WoMHwFnMpKfauyS9PsdW+otsBjqx0nsxvMhN7QRwRU5tDnxxOTupePrdCPlvGy0XaRANTqz4focNKDnOqdAYYMxyIZ7YdcWmChILmORuafQ3fcNXecufAUUAQ="
