@@ -9,7 +9,7 @@ public class TestController {
     @RequestMapping("/")
     public String testIndex() {
         Model model = new Model();
-        return model.hello("Spring");
+        return "Hello from version 2: " + model.hello("Spring");
     }
     
 }
